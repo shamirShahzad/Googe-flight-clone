@@ -1,0 +1,41 @@
+.filter-pill {
+  display: flex;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 8px;
+  p {
+    color: #3c4043;
+    font-size: 14px;
+    font-weight: 500;
+    font-stretch: 0.17px;
+    width: fit-content;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  svg {
+    fill: #202124;
+    width: 14px;
+    height: 14px;
+    margin-left: 6px;
+  }
+  border: 1px solid #bbc1c7;
+  &:hover {
+    background-color: #f6f6f6;
+    border: 1px solid #92979e;
+    p {
+      color: #3a3c3f;
+    }
+  }
+}
+
+.icon {
+  svg {
+    transition: transform 0.3s ease-in-out;
+  }
+}
+.rotate {
+  svg {
+    transform: rotate(180deg);
+  }
+}

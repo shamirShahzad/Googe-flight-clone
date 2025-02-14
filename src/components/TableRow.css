@@ -1,0 +1,563 @@
+.white {
+  color: white !important;
+  display: hidden !important;
+}
+.table-item {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border: 1px solid #dadce0;
+}
+
+.main-row {
+  position: relative;
+  padding: 10px 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  svg {
+    margin: 0px 3px;
+    fill: #a4a4a4;
+  }
+  flex-grow: 1;
+}
+.price {
+  flex-grow: 1;
+  text-align: center;
+  p {
+    color: #000000;
+  }
+}
+
+.row-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3px;
+  gap: 45px;
+  p {
+    color: #70757a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+  }
+}
+.row-3 {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span {
+    color: #70757a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+  }
+  p {
+    color: #70757a;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+  }
+  .emissions {
+    border-radius: 8px;
+    font-size: 10px;
+    border: 1px solid #70757a;
+    padding: 2px 4px;
+  }
+}
+.flight-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.open-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 16px;
+  padding: 10px;
+  background-color: white;
+  top: 35px;
+  border: none;
+  border-radius: 50%;
+  &:hover {
+    background-color: #e8eef1;
+  }
+}
+
+.open-mobile {
+  position: relative;
+  height: fit-content;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.close-details {
+  svg {
+    transform: rotate(180deg);
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  &:hover {
+    background-color: #e8eef1;
+  }
+}
+
+.buttons-price {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  padding-left: 45px;
+  p {
+    color: #202124;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+
+.select-flight {
+  border: 1px solid #dadce0;
+  border-radius: 50px;
+  padding: 6px 25px;
+  background-color: white;
+  color: #1a73e8;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  &:hover {
+    color: rgb(23, 78, 166);
+    background-color: #f8f7f7;
+  }
+  margin-right: 20px;
+}
+
+.departure-details {
+  margin-left: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    width: 12px;
+    height: 12px;
+    fill: #dadce0;
+  }
+}
+.filled-circles {
+  position: relative;
+  left: 2.4px;
+  margin: 3px 0px;
+  display: flex;
+  flex-direction: column;
+  svg {
+    width: 7px;
+    height: 8px;
+  }
+}
+
+.departure-times {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.default-font {
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  line-height: 20px;
+  color: #202124;
+  font-weight: 500;
+}
+
+.sub-font {
+  padding: 10px 0px;
+  font-size: 12px;
+  color: #70757a;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+}
+.airport-font {
+  padding-top: 2px;
+  font-size: 12px;
+  color: #202124;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0.3px;
+}
+
+.airplane-details {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.plane-details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.plane-details {
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+  color: #70757a;
+  span {
+    position: relative;
+    bottom: 3px;
+  }
+}
+.amenities {
+  margin-top: 10px;
+  margin-left: 18px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+}
+
+.icon-text {
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: #5f6368;
+    margin-right: 8px;
+  }
+  p {
+    font-size: 12px;
+    color: #70757a;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  .table-item {
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #dadce0;
+  }
+  .main-row {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 25px;
+  }
+  .flight-logo {
+    width: 35px;
+    height: 35px;
+  }
+  .row-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 0.1;
+    margin-left: 40px;
+    &:nth-child(2) {
+      flex-grow: 0.3;
+      margin-left: 0px;
+    }
+    .sub {
+      color: #70757a;
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 16px;
+    }
+  }
+  .flight-time-details {
+    display: flex;
+    gap: 10px;
+    p {
+      color: #202124;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+      line-height: 16px;
+    }
+  }
+  .flight-time-details-light {
+    display: flex;
+    gap: 10px;
+    p {
+      color: #202124;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 16px;
+    }
+  }
+  .open-details {
+    top: 0px;
+    right: 0px;
+  }
+
+  .open-table-row {
+    position: relative;
+    height: fit-content;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .open-row {
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .open-row-logo {
+    width: 35px;
+    height: 35px;
+  }
+
+  .departure-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 0.8;
+    margin-left: 30px;
+    h3 {
+      color: #202124;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+    }
+  }
+  .open-price-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .open-emissions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      font-size: 16px;
+      color: #202124;
+      letter-spacing: 0.1px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+    p {
+      color: #70757a;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+    }
+  }
+
+  .select-flight {
+    border: 1px solid #dadce0;
+    border-radius: 50px;
+    padding: 6px 25px;
+    margin-left: 40px;
+    background-color: white;
+    color: #1a73e8;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    &:hover {
+      color: rgb(23, 78, 166);
+      background-color: #f8f7f7;
+    }
+  }
+
+  .open-price {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    color: #202124;
+    margin-left: 50px;
+  }
+
+  .close-details {
+    svg {
+      transform: rotate(180deg);
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    padding: 10px;
+    background-color: white;
+    top: 15px;
+    border: none;
+    border-radius: 50%;
+    &:hover {
+      background-color: #e8eef1;
+    }
+  }
+
+  .bottom-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 25px;
+    .left-div {
+      width: 50%;
+      padding-left: 81.5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .right-div {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        svg {
+          fill: #5f6368;
+          height: 16px;
+          width: 16px;
+          margin-right: 8px;
+        }
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0.2px;
+        color: #70757a;
+        margin-bottom: 8px;
+        padding-right: 20px;
+        text-align: start;
+      }
+      .icon-text {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: #5f6368;
+          margin-right: 8px;
+        }
+        p {
+          font-size: 12px;
+          color: #70757a;
+          letter-spacing: 0.3px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+  .dots-icons {
+    svg {
+      fill: #dadce0;
+      width: 12px;
+      height: 12px;
+    }
+    position: relative;
+    bottom: 20px;
+  }
+  .circle-filled {
+    position: relative;
+    left: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3px 0px;
+    svg {
+      width: 7px;
+      height: 10px;
+      fill: #dadce0;
+    }
+  }
+  .timings {
+    margin-left: 8px;
+    .departure-time {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      line-height: 20px;
+      color: #202124;
+      span {
+        position: relative;
+        bottom: 4px;
+      }
+    }
+
+    .total-duration {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      line-height: 20px;
+      color: #70757a;
+      margin: 12px 0px;
+      span {
+        position: relative;
+        bottom: 4px;
+      }
+    }
+
+    .arrival-time {
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.1px;
+      line-height: 20px;
+      color: #202124;
+      span {
+        position: relative;
+        bottom: 4px;
+      }
+    }
+
+    .plane-info {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.3px;
+      line-height: 16px;
+      color: #70757a;
+      margin: 12px 0px;
+      span {
+        position: relative;
+        bottom: 4px;
+      }
+    }
+  }
+}

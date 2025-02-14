@@ -1,0 +1,36 @@
+.pill {
+  font-family: "Roboto", sans-serif;
+  i {
+    margin-left: 10px;
+    color: #1a73e8;
+  }
+  span {
+    margin-left: 10px;
+    padding-right: 10px;
+    color: #202124;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  border: 1.5px solid #dadce1;
+  border-radius: 30px;
+  width: fit-content;
+  padding: 10px 10px;
+  text-decoration: none;
+  &:hover {
+    background-color: rgba(223, 234, 252, 0.5);
+    span {
+      color: #174ea6;
+    }
+  }
+}
+
+.active {
+  background-color: #dfeafc;
+  border: none;
+  span {
+    color: #1967d2;
+  }
+  &:hover {
+    background-color: #c4dafd;
+  }
+}

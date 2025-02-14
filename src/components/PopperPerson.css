@@ -1,0 +1,133 @@
+.container {
+  z-index: 30;
+  position: absolute;
+  top: 38px;
+  right: -80px;
+  width: 244px;
+  height: fit-content;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  border-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.main {
+  margin-top: 0px;
+  height: 216px;
+  width: 212px;
+}
+.buttons {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  height: 32px;
+  margin-top: 10px;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 16px;
+  label {
+    width: 40%;
+    flex-grow: 1;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+    color: #70757a;
+    padding-right: 16px;
+  }
+}
+
+.labels {
+  flex-grow: 1;
+  padding-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.1px;
+  line-height: 24px;
+  color: #70757a;
+}
+
+.sub-label {
+  font-size: 12px;
+}
+
+.counter-container {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  span {
+    color: #bec0c2;
+  }
+}
+
+.counter {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  background-color: #dfeafd;
+  svg {
+    fill: #5981c3;
+  }
+}
+
+.action-button {
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: #5981c3;
+  padding: 8px 18px;
+  background-color: white;
+  &:hover {
+    background-color: #f5f8fe;
+  }
+}
+
+.red {
+  color: #d93025 !important;
+}
+
+.warning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #d93025 !important;
+  svg {
+    fill: #d93025;
+    width: 22px;
+    height: 16px;
+  }
+}
+
+.disabled {
+  svg {
+    fill: #babdbd;
+  }
+  background-color: #e7e8e8;
+}

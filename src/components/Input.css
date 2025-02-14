@@ -1,0 +1,20 @@
+.color-gray {
+  color: #70757a;
+}
+.input-container {
+  border-radius: 50px;
+  padding: 15px 20px;
+  width: 385px;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+}
+.input-travel {
+  border: none;
+  margin-left: 15px;
+  width: calc(100% - 50px);
+  height: 100%;
+  background: none;
+  &:focus {
+    outline: none;
+  }
+}
